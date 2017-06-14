@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Demo</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    <div style="font-size: 30px;margin-top: 20px;">
+        <a href="getAll.cgi">列出所有数据</a>
+    </div>
+    <h1>添加数据：</h1>
+        <form action="addOne.cgi" method="POST">
+        <table>
+            <tr>
+                <td>username：</td>
+                <td><input type="text" name="username" value="" size="30"></td>
+            </tr>
+            <tr>
+                <td>password：</td>
+                <td><input type="password" name="password" value="" size="30" ></td>
+            </tr>
+            <tr>
+                <td>salt：</td>
+                <td><input type="text" name="salt" value="" size="30" ></td>
+            </tr>
+            <tr>
+                <td>headurl：</td>
+                <td><input type="text" name="headurl" value="" size="30" ></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="提交"></td>
+                <td><input type="reset" value="重置"></td>
+            </tr>
+        </table>
+        </form>
+    <h1>查询数据：</h1>
+     <form action="getOne.cgi" method="POST">
+       <table>
+            <tr>
+                <td>请输入数据的id：</td>
+                <td><input type="text" name="id" value="" size="10" ></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="提交"></td>
+                <td><input type="reset" value="重置"></td>
+            </tr>
+        </table>
+     </form>
+    </body>
+</html>
